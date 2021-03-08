@@ -1,4 +1,4 @@
-package philosophers;
+package problem;
 
 import io.reactivex.rxjava3.core.Observable;
 

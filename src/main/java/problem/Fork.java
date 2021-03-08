@@ -1,4 +1,4 @@
-package philosophers;
+package problem;
 
 
 import threads.safe.NonBlockingReference;

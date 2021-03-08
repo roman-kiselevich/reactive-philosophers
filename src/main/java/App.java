@@ -1,4 +1,4 @@
-import philosophers.DiningPhilosophersProblem;
+import problem.DiningPhilosophersProblem;
 
 public class App {
     public static void main(String[] args) throws InterruptedException {
