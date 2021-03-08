@@ -3,7 +3,6 @@ package philosophers;
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.core.Scheduler;
 import io.reactivex.rxjava3.internal.schedulers.IoScheduler;
-import io.reactivex.rxjava3.subjects.PublishSubject;
 
 import java.sql.Timestamp;
 
@@ -20,7 +19,7 @@ public class DiningPhilosophersProblem {
     private final static int MAGIC_FIVE = 5;
 
     private static void Dijkstra() {
-        Observable<Philosopher> philosophers = PublishSubject.using(
+        Observable<Philosopher> philosophers = Observable.using(
                 () -> new RoundTable(MAGIC_FIVE),
                 table -> Observable.fromIterable(table.philosophers),
                 table -> {
